@@ -97,3 +97,21 @@ button:hover {
     box-shadow: 0 5px 1rem rgba(71, 84, 255, 0.2);
     color: rgb(255, 255, 255);
 }
+
+button:disabled {
+    transition: initial;
+    transform: initial;
+    box-shadow: initial;
+    cursor:not-allowed;
+    color: rgb(255, 255, 255);
+}
+
+.loading {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: 0.5;
+    }
+}
