@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assistente de Meta</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <img src="/assets/logoGameQuestion.png" alt="logo esports nlw cores predominantes roxas">
+        <img src="/assets/logo.png" alt="logo esports nlw cores predominantes roxas">
     </header>
     <main>
         <section>
@@ -29,17 +29,24 @@
 
                     <select id="select-games">
                         <option value="">Selecione um jogo</option>
+                        <option value="minecraft">Minecraft</option>
+                        <option value="fortnite">Fortnite</option>
+                        <option value="gta5">GTA V</option>
                         <option value="valorant">Valorant</option>
                         <option value="lol">League of Legends</option>
                         <option value="csgo">CS:GO</option>
+                        <option value="cod">Call of Duty</option>
+                        <option value="thewitcher">The Witcher 3</option>
                         <option value="tlou">The last of us</option>
+                        <option value="roblox">Roblox</option>
+                        <option value="outros">Outros jogos/Jogos em geral</option>
                     </select>
 
                     <input type="text" placeholder="Ex: Melhor build para ADC" required id="input-massage">
 
                     <button type="submit" id="btn-submit">Perguntar</button>
                 </form>
-                <div id="iaResponse">
+                <div id="iaResponse" class="hidden">
                     <div class="response-content">
                     </div>
                 </div>
