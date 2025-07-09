@@ -1,5 +1,5 @@
 const form = document.getElementById('form-input')
-const apiKeyInput = document.getElementById('input-key');
+const apiKeyInput = 'AIzaSyAzVP8skyuSQj9uLaScbjl-QRoxA_e0toE';
 const gameSelect = document.getElementById('select-games');
 const questionInput = document.getElementById('input-massage');
 const askButton = document.getElementById('btn-submit');
@@ -100,7 +100,7 @@ A pergunta do usuário é: **${question}**
 
 const sendform =  async (event) => {
     event.preventDefault()
-    const apiKey = apiKeyInput.value;
+    const apiKey = apiKeyInput;
     const game = gameSelect.value;
     const question = questionInput.value;
 
